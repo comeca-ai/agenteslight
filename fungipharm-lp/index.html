@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FungiPharm | Foco de 4 Horas Sem Café, Sem Crash, Sem Ansiedade</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Cogumelos funcionais para foco, energia e imunidade. Lion's Mane, Reishi, Cordyceps. Ciência comprovada, resultados reais.">
+    <meta name="keywords" content="cogumelos funcionais, lion's mane, reishi, cordyceps, suplementos naturais, foco, energia, biohacking">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="FungiPharm | Cogumelos Funcionais Premium">
+    <meta property="og:description" content="Foco de 4 horas sem café, sem crash, sem ansiedade. Ciência comprovada.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': '#4F7942',
+                        'brand-light': '#7CB342',
+                        'brand-dark': '#2E5A2E',
+                        'cream': '#FDFBF7',
+                        'earth': '#8B7355',
+                        'earth-light': '#D4C4B0',
+                        'dark': '#1A1A1A',
+                    },
+                    fontFamily: {
+                        'sans': ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        
+        /* Gradient natural */
+        .gradient-nature {
+            background: linear-gradient(135deg, #4F7942 0%, #7CB342 100%);
+        }
+        
+        /* Glow effect */
+        .glow-brand {
+            box-shadow: 0 0 30px rgba(79, 121, 66, 0.3);
+        }
+        
+        /* Card hover */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        /* Pulse animation */
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .pulse-soft {
+            animation: pulse-soft 2s infinite;
+        }
+        
+        /* FAQ Accordion */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-answer.open {
+            max-height: 500px;
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        .faq-icon.rotate {
+            transform: rotate(45deg);
+        }
+        
+        /* Floating CTA */
+        .floating-cta {
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .floating-cta.show {
+            transform: translateY(0);
+        }
+        
+        /* Organic shapes */
+        .blob {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    </style>
+</head>
+<body class="bg-cream text-dark font-sans">
+
+    <!-- ============================================
+         SEÇÃO 1: HERO - COPY SWAP READY
+         Layout: A (Educativo/Suplementos)
+         Tempo esperado: 30s
+         ============================================ -->
+    <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+        <!-- Background elements -->
+        <div class="absolute inset-0 bg-gradient-to-br from-cream via-white to-green-50"></div>
+        <div class="absolute top-20 right-0 w-96 h-96 bg-brand/5 blob blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-brand-light/10 blob blur-2xl"></div>
+        
+        <div class="container mx-auto px-4 py-12 md:py-20 relative z-10">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Conteúdo -->
+                    <div class="text-center lg:text-left">
+                        
+                        <!-- Badge de autoridade -->
+                        <div class="inline-flex items-center gap-2 bg-white border border-brand/20 rounded-full px-4 py-2 mb-6 shadow-sm">
+                            <span class="w-2 h-2 bg-brand rounded-full pulse-soft"></span>
+                            <span class="text-sm text-brand font-medium">+100 Estudos Científicos Comprovam</span>
+                        </div>
+                        
+                        <!-- COPY SWAP #1: HEADLINE (3 VARIAÇÕES)
+                             V1: Ângulo Foco (CURRENT)
+                             V2: "Tchau Café, Olá Energia Real: Disposição Natural o Dia Inteiro"
+                             V3: "Por Que Médicos de Harvard Estão Prescrevendo Cogumelos"
+                             TESTE: Rodar V1 por 24h, medir CTR
+                        -->
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-dark">
+                            Foco de <span class="text-brand">4 Horas</span><br>
+                            Sem Café, Sem Crash,<br>
+                            <span class="text-brand">Sem Ansiedade</span>
+                        </h1>
+                        
+                        <!-- COPY SWAP #2: SUBHEADLINE (2 VARIAÇÕES)
+                             V1: (CURRENT)
+                             V2: "O segredo dos biohackers do Vale do Silício para performance mental"
+                        -->
+                        <p class="text-xl text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+                            Cogumelos funcionais usados há <strong>2000 anos</strong> e comprovados pela ciência moderna. 
+                            <span class="text-brand font-semibold">Clareza mental real, sem efeitos colaterais.</span>
+                        </p>
+                        
+                        <!-- 3 Micro-benefícios -->
+                        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-8">
+                            <div class="flex items-center gap-2">
+                                <div class="w-6 h-6 bg-brand/10 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">100% Natural</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-6 h-6 bg-brand/10 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Resultados em 7 dias</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-6 h-6 bg-brand/10 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700">Garantia 30 dias</span>
+                            </div>
+                        </div>
+                        
+                        <!-- COPY SWAP #3: CTA PRIMARY (2 VARIAÇÕES)
+                             V1: "QUERO FOCO NATURAL" (CURRENT - CTA Override Persona 1)
+                             V2: "VER PRODUTOS"
+                        -->
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <a href="#produtos" class="group inline-flex items-center justify-center gap-2 gradient-nature text-white font-bold text-lg px-8 py-4 rounded-full transition-all hover:shadow-xl glow-brand">
+                                QUERO FOCO NATURAL
+                                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </a>
+                            <a href="#ciencia" class="inline-flex items-center justify-center gap-2 bg-white border-2 border-brand text-brand font-semibold px-8 py-4 rounded-full hover:bg-brand hover:text-white transition-all">
+                                Ver a Ciência
+                            </a>
+                        </div>
+                        
+                        <!-- Prova social rápida -->
+                        <div class="mt-8 flex items-center justify-center lg:justify-start gap-4">
+                            <div class="flex -space-x-2">
+                                <div class="w-10 h-10 bg-brand/20 rounded-full border-2 border-white flex items-center justify-center text-xs font-bold text-brand">TF</div>
+                                <div class="w-10 h-10 bg-brand/30 rounded-full border-2 border-white flex items-center justify-center text-xs font-bold text-brand">AH</div>
+                                <div class="w-10 h-10 bg-brand/40 rounded-full border-2 border-white flex items-center justify-center text-xs font-bold text-brand">PS</div>
+                            </div>
+                            <p class="text-sm text-gray-600">
+                                <span class="font-semibold text-dark">+2.500 pessoas</span> já experimentaram
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Imagem/Visual do produto -->
+                    <div class="relative">
+                        <div class="relative bg-gradient-to-br from-brand/5 to-brand/10 rounded-3xl p-8 lg:p-12">
+                            <!-- Placeholder para imagem do produto -->
+                            <div class="aspect-square bg-white rounded-2xl shadow-xl flex items-center justify-center">
+                                <div class="text-center p-8">
+                                    <span class="text-8xl mb-4 block">🍄</span>
+                                    <p class="text-2xl font-bold text-brand">Lion's Mane</p>
+                                    <p class="text-gray-500">O Cogumelo do Cérebro</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Badges flutuantes -->
+                            <div class="absolute -top-4 -right-4 bg-white rounded-xl shadow-lg px-4 py-2">
+                                <p class="text-sm font-bold text-brand">⭐ 4.9/5</p>
+                                <p class="text-xs text-gray-500">+500 avaliações</p>
+                            </div>
+                            <div class="absolute -bottom-4 -left-4 bg-brand text-white rounded-xl shadow-lg px-4 py-2">
+                                <p class="text-sm font-bold">🧠 +60% NGF</p>
+                                <p class="text-xs opacity-80">Fator de crescimento neural</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 2: PROBLEMA / IDENTIFICAÇÃO
+         Tempo esperado: 20s
+         ============================================ -->
+    <section id="problema" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                
+                <!-- Título -->
+                <div class="text-center mb-12">
+                    <p class="text-brand font-semibold mb-2">VOCÊ SE IDENTIFICA?</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Se isso parece familiar, você está no lugar certo
+                    </h2>
+                </div>
+                
+                <!-- Cards de dores -->
+                <div class="grid md:grid-cols-2 gap-6 mb-12">
+                    
+                    <!-- Dor 1 -->
+                    <div class="card-hover bg-cream rounded-2xl p-6 border border-gray-100">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+                                <span class="text-2xl">😵</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Cérebro no Piloto Automático</h3>
+                                <p class="text-gray-600">
+                                    "Fico o dia inteiro no automático, não consigo me concentrar nas tarefas importantes. 
+                                    Parece que minha mente tá sempre em outro lugar."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Dor 2 -->
+                    <div class="card-hover bg-cream rounded-2xl p-6 border border-gray-100">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+                                <span class="text-2xl">☕</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Refém do Café</h3>
+                                <p class="text-gray-600">
+                                    "Tomo 5 cafés por dia e ainda assim às 15h já tô destruído. 
+                                    Fico ansioso, com coração acelerado, e depois vem o crash."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Dor 3 -->
+                    <div class="card-hover bg-cream rounded-2xl p-6 border border-gray-100">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                                <span class="text-2xl">😴</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Cansado de Estar Cansado</h3>
+                                <p class="text-gray-600">
+                                    "Durmo 8 horas e acordo mais cansado do que deitei. 
+                                    Parece que minha bateria nunca carrega 100%."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Dor 4 -->
+                    <div class="card-hover bg-cream rounded-2xl p-6 border border-gray-100">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                <span class="text-2xl">🌀</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Mente que Não Desliga</h3>
+                                <p class="text-gray-600">
+                                    "Na hora de dormir, fico pensando em mil coisas. 
+                                    Ansiedade, preocupações, lista de tarefas... impossível relaxar."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Transição -->
+                <div class="text-center bg-gradient-to-r from-brand/5 via-brand/10 to-brand/5 rounded-2xl p-8 border border-brand/10">
+                    <p class="text-xl text-gray-700">
+                        Se você marcou <span class="text-brand font-bold">pelo menos 2</span>, 
+                        seu cérebro está pedindo ajuda.
+                    </p>
+                    <p class="text-brand font-semibold mt-2">
+                        A boa notícia? A natureza tem a solução. E ela existe há 2000 anos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 3: SOLUÇÃO / PRODUTOS
+         Tempo esperado: 30s
+         ============================================ -->
+    <section id="produtos" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                
+                <!-- Título -->
+                <div class="text-center mb-16">
+                    <p class="text-brand font-semibold mb-2">A SOLUÇÃO NATURAL</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Cogumelos Funcionais: Ciência de 2000 Anos
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Cada cogumelo tem um superpoder. Escolha o seu.
+                    </p>
+                </div>
+                
+                <!-- Produtos -->
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    
+                    <!-- Produto 1: Lion's Mane -->
+                    <div class="card-hover bg-white rounded-3xl p-8 shadow-lg border border-gray-100 relative overflow-hidden">
+                        <div class="absolute top-4 right-4 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full">
+                            MAIS VENDIDO
+                        </div>
+                        <div class="text-center mb-6">
+                            <span class="text-6xl">🧠</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">Lion's Mane</h3>
+                        <p class="text-brand font-semibold text-center mb-4">O Cogumelo do Cérebro</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-gray-700">Aumenta foco e concentração</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-gray-700">Melhora memória</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-gray-700">Estimula NGF (+60%)</span>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <p class="text-sm text-gray-500 line-through">R$ 149,90</p>
+                            <p class="text-3xl font-bold text-brand">R$ 119,90</p>
+                            <p class="text-sm text-gray-600 mb-4">ou 3x de R$ 39,97</p>
+                            <a href="#comprar" class="block w-full gradient-nature text-white font-bold py-3 rounded-full hover:shadow-lg transition-all">
+                                QUERO FOCO
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Produto 2: Reishi -->
+                    <div class="card-hover bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+                        <div class="text-center mb-6">
+                            <span class="text-6xl">😴</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">Reishi</h3>
+                        <p class="text-brand font-semibold text-center mb-4">O Cogumelo da Calma</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-gray-700">Reduz estresse e ansiedade</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-gray-700">Melhora qualidade do sono</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-gray-700">Fortalece imunidade</span>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <p class="text-sm text-gray-500 line-through">R$ 139,90</p>
+                            <p class="text-3xl font-bold text-brand">R$ 109,90</p>
+                            <p class="text-sm text-gray-600 mb-4">ou 3x de R$ 36,63</p>
+                            <a href="#comprar" class="block w-full bg-white border-2 border-brand text-brand font-bold py-3 rounded-full hover:bg-brand hover:text-white transition-all">
+                                QUERO CALMA
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Produto 3: Cordyceps -->
+                    <div class="card-hover bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+                        <div class="text-center mb-6">
+                            <span class="text-6xl">⚡</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">Cordyceps</h3>
+                        <p class="text-brand font-semibold text-center mb-4">O Cogumelo da Energia</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-gray-700">Aumenta energia natural</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-gray-700">Melhora performance física</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-gray-700">Resistência ao cansaço</span>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <p class="text-sm text-gray-500 line-through">R$ 159,90</p>
+                            <p class="text-3xl font-bold text-brand">R$ 129,90</p>
+                            <p class="text-sm text-gray-600 mb-4">ou 3x de R$ 43,30</p>
+                            <a href="#comprar" class="block w-full bg-white border-2 border-brand text-brand font-bold py-3 rounded-full hover:bg-brand hover:text-white transition-all">
+                                QUERO ENERGIA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kit completo -->
+                <div class="bg-gradient-to-r from-brand to-brand-dark rounded-3xl p-8 md:p-12 text-white">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <div class="inline-block bg-white/20 rounded-full px-4 py-1 text-sm font-semibold mb-4">
+                                🔥 MELHOR CUSTO-BENEFÍCIO
+                            </div>
+                            <h3 class="text-3xl font-bold mb-4">Kit Completo: Foco + Calma + Energia</h3>
+                            <p class="text-white/80 mb-6">
+                                Os 3 cogumelos funcionais que você precisa para ter performance mental completa. 
+                                Manhã com Lion's Mane, tarde com Cordyceps, noite com Reishi.
+                            </p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Lion's Mane (60 cápsulas)</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Reishi (60 cápsulas)</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Cordyceps (60 cápsulas)</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <span class="text-yellow-300 font-semibold">BÔNUS: Guia de Uso + Suporte</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center bg-white/10 rounded-2xl p-8 backdrop-blur-sm">
+                            <p class="text-white/60 line-through text-lg">De R$ 359,70</p>
+                            <p class="text-5xl font-bold mb-2">R$ 279,90</p>
+                            <p class="text-white/80 mb-4">ou 6x de R$ 46,65 sem juros</p>
+                            <p class="text-yellow-300 font-semibold mb-6">Economia de R$ 79,80 🎉</p>
+                            <a href="#comprar" class="block w-full bg-white text-brand font-bold py-4 rounded-full hover:shadow-xl transition-all text-lg">
+                                QUERO O KIT COMPLETO
+                            </a>
+                            <p class="text-xs text-white/60 mt-4">🔒 Pagamento 100% seguro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 4: CIÊNCIA / COMO FUNCIONA
+         Tempo esperado: 20s
+         ============================================ -->
+    <section id="ciencia" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                
+                <!-- Título -->
+                <div class="text-center mb-16">
+                    <p class="text-brand font-semibold mb-2">A CIÊNCIA</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Por Que Funciona (Comprovado)
+                    </h2>
+                </div>
+                
+                <!-- Steps -->
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-nature rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-2xl">
+                            1
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Estimula NGF</h3>
+                        <p class="text-gray-600">
+                            Lion's Mane aumenta a produção de NGF (Nerve Growth Factor) em até 60%, 
+                            promovendo regeneração neural.
+                        </p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-nature rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-2xl">
+                            2
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Melhora Conexões</h3>
+                        <p class="text-gray-600">
+                            Novas conexões neurais = melhor memória, foco e capacidade de aprendizado. 
+                            Seu cérebro literalmente evolui.
+                        </p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-nature rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-2xl">
+                            3
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Resultados Reais</h3>
+                        <p class="text-gray-600">
+                            Em 7-14 dias você sente mais clareza. Em 30 dias, a transformação é visível. 
+                            Foco natural e sustentável.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Estudos -->
+                <div class="bg-cream rounded-2xl p-8 border border-gray-200">
+                    <h3 class="font-bold text-xl text-center mb-6">📚 Baseado em Ciência Real</h3>
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <p class="text-4xl font-bold text-brand mb-2">+100</p>
+                            <p class="text-gray-600">Estudos científicos sobre cogumelos funcionais</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-bold text-brand mb-2">2000+</p>
+                            <p class="text-gray-600">Anos de uso na medicina oriental</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-bold text-brand mb-2">60%</p>
+                            <p class="text-gray-600">Aumento de NGF com Lion's Mane</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 5: PROVA SOCIAL
+         Tempo esperado: 15s
+         ============================================ -->
+    <section id="depoimentos" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                
+                <!-- Título -->
+                <div class="text-center mb-12">
+                    <p class="text-brand font-semibold mb-2">RESULTADOS REAIS</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        O Que Nossos Clientes Estão Dizendo
+                    </h2>
+                </div>
+                
+                <!-- COPY SWAP #4: DEPOIMENTOS (Variações)
+                     V1: Depoimentos com resultado específico (CURRENT)
+                     V2: Depoimentos mais emocionais
+                -->
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    
+                    <!-- Depoimento 1 -->
+                    <div class="card-hover bg-white rounded-2xl p-6 shadow-lg">
+                        <div class="flex gap-1 text-yellow-400 mb-4">
+                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            "Tomava <span class="font-bold text-brand">5 cafés por dia</span>. Depois de 2 semanas com Lion's Mane, 
+                            reduzi pra 1. Meu foco é <span class="font-bold text-brand">muito melhor</span> e sem ansiedade."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-brand/20 rounded-full flex items-center justify-center">
+                                <span class="text-brand font-bold">RF</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Rafael F.</p>
+                                <p class="text-sm text-gray-500">Programador, 32 anos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento 2 -->
+                    <div class="card-hover bg-white rounded-2xl p-6 shadow-lg">
+                        <div class="flex gap-1 text-yellow-400 mb-4">
+                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            "O Reishi mudou meu sono. Antes acordava <span class="font-bold text-brand">3-4x por noite</span>. 
+                            Agora durmo de uma vez só e acordo <span class="font-bold text-brand">realmente descansada</span>."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-brand/20 rounded-full flex items-center justify-center">
+                                <span class="text-brand font-bold">MC</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Marina C.</p>
+                                <p class="text-sm text-gray-500">Executiva, 41 anos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento 3 -->
+                    <div class="card-hover bg-white rounded-2xl p-6 shadow-lg">
+                        <div class="flex gap-1 text-yellow-400 mb-4">
+                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            "Sou cético com suplemento. Mas os estudos me convenceram a testar. 
+                            <span class="font-bold text-brand">Em 10 dias</span> já senti diferença no foco. Virei cliente."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-brand/20 rounded-full flex items-center justify-center">
+                                <span class="text-brand font-bold">PS</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Paulo S.</p>
+                                <p class="text-sm text-gray-500">Médico, 45 anos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Números -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+                        <p class="text-3xl font-bold text-brand">+2.500</p>
+                        <p class="text-sm text-gray-600">Clientes satisfeitos</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+                        <p class="text-3xl font-bold text-brand">4.9/5</p>
+                        <p class="text-sm text-gray-600">Avaliação média</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+                        <p class="text-3xl font-bold text-brand">97%</p>
+                        <p class="text-sm text-gray-600">Recomendam</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+                        <p class="text-3xl font-bold text-brand">7 dias</p>
+                        <p class="text-sm text-gray-600">Primeiros resultados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 6: GARANTIA
+         Tempo esperado: 10s
+         ============================================ -->
+    <section id="garantia" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                
+                <!-- Selo visual -->
+                <div class="inline-flex items-center justify-center w-32 h-32 gradient-nature rounded-full mb-8">
+                    <div class="text-center text-white">
+                        <div class="text-3xl font-bold">30</div>
+                        <div class="text-sm font-semibold">DIAS</div>
+                    </div>
+                </div>
+                
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Garantia Incondicional de 30 Dias
+                </h2>
+                
+                <p class="text-xl text-gray-600 mb-8 max-w-xl mx-auto">
+                    Experimente por 30 dias. Se não sentir diferença no seu foco, energia ou sono, 
+                    devolvemos <span class="text-brand font-semibold">100% do seu dinheiro</span>.
+                </p>
+                
+                <div class="bg-cream rounded-2xl p-8 border border-brand/20">
+                    <p class="text-gray-700 mb-4">
+                        <span class="text-brand font-bold">Sem perguntas.</span> Sem burocracia. Sem letras miúdas.
+                    </p>
+                    <p class="text-gray-600">
+                        Confiamos tanto na ciência por trás dos nossos produtos que assumimos todo o risco.
+                        Você não tem nada a perder.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 7: FAQ
+         Tempo esperado: 10s
+         ============================================ -->
+    <section id="faq" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                
+                <!-- Título -->
+                <div class="text-center mb-12">
+                    <p class="text-brand font-semibold mb-2">DÚVIDAS FREQUENTES</p>
+                    <h2 class="text-3xl md:text-4xl font-bold">
+                        Perguntas Comuns
+                    </h2>
+                </div>
+                
+                <!-- FAQ Accordion -->
+                <div class="space-y-4">
+                    
+                    <!-- FAQ 1 -->
+                    <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-semibold pr-4">Quanto tempo demora para fazer efeito?</span>
+                            <span class="faq-icon text-brand text-2xl flex-shrink-0">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-6 pb-6 text-gray-600">
+                                Os primeiros efeitos são sentidos entre <span class="text-brand font-semibold">7 e 14 dias</span>. 
+                                Para benefícios completos, recomendamos uso contínuo por pelo menos 30 dias. 
+                                Alguns estudos mostram que os benefícios aumentam progressivamente com o uso prolongado.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-semibold pr-4">Tem efeitos colaterais?</span>
+                            <span class="faq-icon text-brand text-2xl flex-shrink-0">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-6 pb-6 text-gray-600">
+                                Cogumelos funcionais são usados há <span class="text-brand font-semibold">milhares de anos</span> e são considerados muito seguros. 
+                                Não causam dependência, não têm crash como café, e não afetam o sono (pelo contrário, Reishi melhora!). 
+                                Se você toma medicamentos, consulte seu médico antes.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-semibold pr-4">Como devo tomar?</span>
+                            <span class="faq-icon text-brand text-2xl flex-shrink-0">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-6 pb-6 text-gray-600">
+                                <strong>Lion's Mane:</strong> 2 cápsulas pela manhã, com ou sem alimento.<br>
+                                <strong>Cordyceps:</strong> 2 cápsulas pela manhã ou antes do treino.<br>
+                                <strong>Reishi:</strong> 2 cápsulas à noite, 30 min antes de dormir.<br>
+                                <span class="text-brand font-semibold">Cada frasco tem 60 cápsulas = 30 dias de uso.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-semibold pr-4">Posso tomar junto com café?</span>
+                            <span class="faq-icon text-brand text-2xl flex-shrink-0">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-6 pb-6 text-gray-600">
+                                Sim! Inclusive, Lion's Mane + café é uma combinação popular entre biohackers. 
+                                O cogumelo <span class="text-brand font-semibold">potencializa o foco do café</span> enquanto reduz os efeitos colaterais (ansiedade, tremor). 
+                                Com o tempo, muitos clientes reduzem naturalmente o consumo de café.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 5 -->
+                    <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-semibold pr-4">E se não funcionar para mim?</span>
+                            <span class="faq-icon text-brand text-2xl flex-shrink-0">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-6 pb-6 text-gray-600">
+                                Por isso oferecemos <span class="text-brand font-semibold">garantia de 30 dias</span>. 
+                                Se você não sentir diferença, devolvemos 100% do seu dinheiro. 
+                                Sem perguntas, sem burocracia. O risco é todo nosso.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 8: CTA FINAL
+         Tempo esperado: 5s
+         ============================================ -->
+    <section id="comprar" class="py-20 bg-gradient-to-b from-white to-cream">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                
+                <!-- Headline de fechamento -->
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                    Seu Cérebro Merece <span class="text-brand">Funcionar Melhor</span>
+                </h2>
+                
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Você pode continuar dependendo de café e se sentindo esgotado.
+                    Ou pode experimentar o que a ciência já comprovou.
+                </p>
+                
+                <!-- Recap -->
+                <div class="flex flex-col md:flex-row justify-center gap-6 mb-10">
+                    <div class="flex items-center gap-2 text-gray-700">
+                        <svg class="w-6 h-6 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Foco natural de 4+ horas</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-700">
+                        <svg class="w-6 h-6 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Sem crash ou ansiedade</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-700">
+                        <svg class="w-6 h-6 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Garantia de 30 dias</span>
+                    </div>
+                </div>
+                
+                <!-- CTA grande -->
+                <a href="#produtos" class="group inline-flex items-center justify-center gap-3 gradient-nature text-white font-bold text-xl px-12 py-5 rounded-full transition-all hover:shadow-2xl glow-brand">
+                    QUERO EXPERIMENTAR AGORA
+                    <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+                
+                <!-- Urgência -->
+                <!-- COPY SWAP #5: URGÊNCIA (3 VARIAÇÕES)
+                     V1: Frete grátis (CURRENT)
+                     V2: "Últimas 50 unidades em estoque"
+                     V3: "Cupom FOCO15 expira em 24h"
+                -->
+                <p class="text-gray-500 mt-6">
+                    🚚 <span class="text-brand font-semibold">Frete grátis</span> para todo Brasil | 
+                    🔒 Pagamento 100% seguro
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 9: FOOTER
+         ============================================ -->
+    <footer class="py-12 bg-dark text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    
+                    <!-- Logo -->
+                    <div class="flex items-center gap-2">
+                        <span class="text-2xl">🍄</span>
+                        <span class="text-xl font-bold">FungiPharm</span>
+                    </div>
+                    
+                    <!-- Links -->
+                    <div class="flex gap-6 text-sm text-gray-400">
+                        <a href="#" class="hover:text-white transition-colors">Termos de Uso</a>
+                        <a href="#" class="hover:text-white transition-colors">Política de Privacidade</a>
+                        <a href="#" class="hover:text-white transition-colors">Contato</a>
+                    </div>
+                </div>
+                
+                <!-- Disclaimer -->
+                <div class="text-center text-gray-500 text-xs mt-8 max-w-2xl mx-auto">
+                    <p class="mb-2">
+                        © 2024 FungiPharm. Todos os direitos reservados.
+                    </p>
+                    <p>
+                        Disclaimer: Estes produtos não são medicamentos e não substituem orientação médica. 
+                        Resultados podem variar de pessoa para pessoa. 
+                        Consulte um profissional de saúde antes de iniciar qualquer suplementação.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         FLOATING CTA MOBILE
+         ============================================ -->
+    <div id="floating-cta" class="floating-cta fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 p-4 z-50 md:hidden">
+        <a href="#produtos" class="flex items-center justify-center gap-2 gradient-nature text-white font-bold py-4 px-6 rounded-full w-full">
+            QUERO FOCO NATURAL
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+        </a>
+        <p class="text-center text-xs text-gray-500 mt-2">🔒 Pagamento seguro | Garantia 30 dias</p>
+    </div>
+
+    <!-- ============================================
+         SCRIPTS
+         ============================================ -->
+    <script>
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('open');
+                }
+            });
+            document.querySelectorAll('.faq-icon').forEach(item => {
+                if (item !== icon) {
+                    item.classList.remove('rotate');
+                }
+            });
+            
+            // Toggle current
+            answer.classList.toggle('open');
+            icon.classList.toggle('rotate');
+        }
+        
+        // Floating CTA Show/Hide
+        const floatingCta = document.getElementById('floating-cta');
+        const heroSection = document.getElementById('hero');
+        
+        function handleScroll() {
+            const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+            
+            if (window.scrollY > heroBottom - 100) {
+                floatingCta.classList.add('show');
+            } else {
+                floatingCta.classList.remove('show');
+            }
+        }
+        
+        window.addEventListener('scroll', handleScroll);
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = window.innerWidth < 768 ? 80 : 0;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
