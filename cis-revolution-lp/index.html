@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS Revolution | Destrave Sua Vida em 12 Semanas</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Transforme as 6 áreas da sua vida em 12 semanas com a metodologia que já impactou +5.000 empresários. Sem sacrificar seu negócio, sua saúde ou sua família.">
+    <meta name="keywords" content="desenvolvimento pessoal, transformação, empresários, alta performance, metodologia CIS">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CIS Revolution | Destrave Sua Vida em 12 Semanas">
+    <meta property="og:description" content="O método que já transformou +5.000 empresários nas 6 áreas da vida">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': '#E66353',
+                        'brand-dark': '#C9503F',
+                        'dark': '#0A0A0A',
+                        'dark-light': '#141414',
+                        'gray-dark': '#1A1A1A',
+                        'gray-medium': '#2A2A2A',
+                        'gold': '#D4AF37',
+                    },
+                    fontFamily: {
+                        'display': ['Space Grotesk', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #0A0A0A;
+        }
+        .font-display { font-family: 'Space Grotesk', sans-serif; }
+        
+        /* Gradient Animation */
+        .gradient-text {
+            background: linear-gradient(135deg, #E66353 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Glow effect */
+        .glow-brand {
+            box-shadow: 0 0 40px rgba(230, 99, 83, 0.3);
+        }
+        
+        /* Card hover */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        
+        /* Pulse animation */
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(230, 99, 83, 0.4); }
+            50% { box-shadow: 0 0 40px rgba(230, 99, 83, 0.7); }
+        }
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+        
+        /* FAQ Accordion */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-answer.open {
+            max-height: 500px;
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        .faq-icon.rotate {
+            transform: rotate(45deg);
+        }
+        
+        /* Floating CTA */
+        .floating-cta {
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .floating-cta.show {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 1: HERO -->
+    <!-- ========================================== -->
+    <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+        <!-- Background gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-dark via-dark-light to-dark"></div>
+        <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-brand/5 blur-3xl rounded-full"></div>
+        
+        <div class="container mx-auto px-4 py-12 md:py-20 relative z-10">
+            <div class="max-w-5xl mx-auto text-center">
+                
+                <!-- Badge de Autoridade -->
+                <div class="inline-flex items-center gap-2 bg-gray-dark/80 backdrop-blur-sm border border-gray-medium rounded-full px-4 py-2 mb-8">
+                    <span class="w-2 h-2 bg-brand rounded-full animate-pulse"></span>
+                    <span class="text-sm text-gray-300">+5.000 Vidas Transformadas</span>
+                    <span class="text-gold">★★★★★</span>
+                </div>
+                
+                <!-- Headline Principal -->
+                <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Em <span class="gradient-text">12 Semanas</span>, Destrave as 
+                    <span class="gradient-text">6 Áreas da Sua Vida</span> e Leve Seu 
+                    Negócio ao <span class="gradient-text">Próximo Nível</span>
+                </h1>
+                
+                <!-- Subheadline (Anti-objeção) -->
+                <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
+                    Sem largar sua empresa, sem horas de terapia, sem fórmulas mágicas.
+                    <span class="text-white">A metodologia que empresários como você estão usando para ter sucesso E qualidade de vida.</span>
+                </p>
+                
+                <!-- 3 Micro-benefícios -->
+                <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mb-10">
+                    <div class="flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-gray-300">Mais energia em 30 dias</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-gray-300">Clareza para decidir</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-gray-300">Metodologia testada</span>
+                    </div>
+                </div>
+                
+                <!-- CTA Principal -->
+                <div class="flex flex-col items-center gap-4">
+                    <a href="#investimento" class="group inline-flex items-center justify-center gap-3 bg-brand hover:bg-brand-dark text-white font-bold text-lg px-8 py-5 rounded-xl transition-all pulse-glow">
+                        QUERO TRANSFORMAR MINHA VIDA EM 12 SEMANAS
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                    
+                    <!-- Urgência -->
+                    <p class="text-sm text-gray-400">
+                        ⚡ <span class="text-brand font-semibold">Últimas 23 vagas</span> para a turma de Janeiro
+                    </p>
+                </div>
+                
+                <!-- Prova Social Rápida -->
+                <div class="mt-12 pt-8 border-t border-gray-dark">
+                    <p class="text-sm text-gray-500 mb-4">Empresários que já passaram pela transformação:</p>
+                    <div class="flex justify-center items-center gap-6 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+                        <div class="text-gray-400 font-display text-lg">G4 Educação</div>
+                        <div class="w-px h-6 bg-gray-700"></div>
+                        <div class="text-gray-400 font-display text-lg">Primo Rico</div>
+                        <div class="w-px h-6 bg-gray-700"></div>
+                        <div class="text-gray-400 font-display text-lg">XP Inc</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 2: PROBLEMA / IDENTIFICAÇÃO -->
+    <!-- ========================================== -->
+    <section id="problema" class="py-20 bg-dark-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                
+                <!-- Título da seção -->
+                <div class="text-center mb-16">
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
+                        Este programa é para você se...
+                    </h2>
+                    <p class="text-gray-400 text-lg">
+                        Você se identifica com pelo menos 2 dessas situações?
+                    </p>
+                </div>
+                
+                <!-- Cards de Dores -->
+                <div class="grid md:grid-cols-2 gap-6 mb-12">
+                    
+                    <!-- Dor 1 -->
+                    <div class="card-hover bg-gray-dark rounded-2xl p-8 border border-gray-medium hover:border-brand/30">
+                        <div class="w-12 h-12 bg-brand/10 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-2">Trabalha 14h+ por dia</h3>
+                        <p class="text-gray-400">
+                            "Minha empresa cresce mas minha vida pessoal tá um caos. Não tenho tempo pra nada, nem pra mim."
+                        </p>
+                    </div>
+                    
+                    <!-- Dor 2 -->
+                    <div class="card-hover bg-gray-dark rounded-2xl p-8 border border-gray-medium hover:border-brand/30">
+                        <div class="w-12 h-12 bg-brand/10 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-2">Relacionamentos sofrendo</h3>
+                        <p class="text-gray-400">
+                            "Minha esposa reclama que não estou presente. Meus filhos mal me veem. Não lembro a última vez que fiz algo em família."
+                        </p>
+                    </div>
+                    
+                    <!-- Dor 3 -->
+                    <div class="card-hover bg-gray-dark rounded-2xl p-8 border border-gray-medium hover:border-brand/30">
+                        <div class="w-12 h-12 bg-brand/10 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-2">Exaustão constante</h3>
+                        <p class="text-gray-400">
+                            "Tô cansado, esgotado. Acordo já pensando nos problemas. Saúde tá de lado, energia baixa, ansiedade alta."
+                        </p>
+                    </div>
+                    
+                    <!-- Dor 4 -->
+                    <div class="card-hover bg-gray-dark rounded-2xl p-8 border border-gray-medium hover:border-brand/30">
+                        <div class="w-12 h-12 bg-brand/10 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-2">Travado, sem clareza</h3>
+                        <p class="text-gray-400">
+                            "Sei que posso mais, mas tô girando em círculos. Fiz vários cursos, li livros, mas não consigo aplicar nada de verdade."
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Frase de transição -->
+                <div class="text-center bg-gradient-to-r from-brand/10 via-brand/20 to-brand/10 rounded-2xl p-8 border border-brand/20">
+                    <p class="text-xl md:text-2xl text-gray-300">
+                        Se você marcou <span class="text-brand font-bold">2 ou mais</span>, você está exatamente onde 
+                        <span class="text-white font-bold">+5.000 empresários</span> estavam antes de descobrir a metodologia CIS.
+                    </p>
+                    <p class="text-brand font-semibold mt-4">
+                        A boa notícia? Existe uma saída. E ela leva 12 semanas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 3: SOLUÇÃO / O QUE RECEBE -->
+    <!-- ========================================== -->
+    <section id="solucao" class="py-20 bg-dark">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                
+                <!-- Título -->
+                <div class="text-center mb-16">
+                    <p class="text-brand font-semibold mb-2">O QUE VOCÊ RECEBE</p>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
+                        Em 12 Semanas, Você Sai Com:
+                    </h2>
+                    <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                        Uma transformação completa nas 6 áreas da vida, com ferramentas práticas que você vai usar para sempre.
+                    </p>
+                </div>
+                
+                <!-- Badge de diferencial -->
+                <div class="flex justify-center mb-12">
+                    <div class="inline-flex items-center gap-3 bg-gray-dark rounded-full px-6 py-3 border border-gray-medium">
+                        <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-white font-semibold">Metodologia 100% Prática</span>
+                        <span class="text-gray-400">|</span>
+                        <span class="text-gray-300">Aplique já na primeira semana</span>
+                    </div>
+                </div>
+                
+                <!-- Entregáveis -->
+                <div class="grid md:grid-cols-2 gap-8 mb-16">
+                    
+                    <!-- Entregável 1 -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand rounded-xl flex items-center justify-center">
+                            <span class="text-2xl">🧠</span>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-xl font-bold mb-2">Clareza Mental Total</h3>
+                            <p class="text-gray-400">
+                                Você vai saber exatamente o que fazer em cada área da vida. Chega de dúvidas, chega de procrastinação.
+                                <span class="text-brand font-semibold">Framework de Decisão CIS incluso.</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Entregável 2 -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand rounded-xl flex items-center justify-center">
+                            <span class="text-2xl">⚡</span>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-xl font-bold mb-2">Energia de Alta Performance</h3>
+                            <p class="text-gray-400">
+                                Protocolo testado para acordar com disposição, manter foco durante o dia e dormir bem.
+                                <span class="text-brand font-semibold">Resultados visíveis em 30 dias.</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Entregável 3 -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand rounded-xl flex items-center justify-center">
+                            <span class="text-2xl">💰</span>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-xl font-bold mb-2">Negócio que Funciona Sem Você</h3>
+                            <p class="text-gray-400">
+                                Metodologia para parar de apagar incêndios e começar a escalar. Seu negócio cresce enquanto você vive.
+                                <span class="text-brand font-semibold">Plano de Ação Empresarial incluso.</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Entregável 4 -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-brand rounded-xl flex items-center justify-center">
+                            <span class="text-2xl">❤️</span>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-xl font-bold mb-2">Relacionamentos Fortalecidos</h3>
+                            <p class="text-gray-400">
+                                Ferramentas práticas para reconectar com família, construir relacionamentos de verdade e estar presente.
+                                <span class="text-brand font-semibold">Guia de Conexão Familiar incluso.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- As 6 Áreas -->
+                <div class="bg-gray-dark rounded-2xl p-8 border border-gray-medium">
+                    <h3 class="font-display text-xl font-bold text-center mb-8">As 6 Áreas da Transformação CIS</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                        <div class="text-center p-4">
+                            <div class="w-16 h-16 mx-auto mb-3 bg-brand/10 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">💪</span>
+                            </div>
+                            <p class="font-semibold">Saúde</p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="w-16 h-16 mx-auto mb-3 bg-brand/10 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">💕</span>
+                            </div>
+                            <p class="font-semibold">Relacionamentos</p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="w-16 h-16 mx-auto mb-3 bg-brand/10 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">🎯</span>
+                            </div>
+                            <p class="font-semibold">Carreira</p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="w-16 h-16 mx-auto mb-3 bg-brand/10 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">💰</span>
+                            </div>
+                            <p class="font-semibold">Finanças</p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="w-16 h-16 mx-auto mb-3 bg-brand/10 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">🧠</span>
+                            </div>
+                            <p class="font-semibold">Mente</p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="w-16 h-16 mx-auto mb-3 bg-brand/10 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">✨</span>
+                            </div>
+                            <p class="font-semibold">Propósito</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Citação -->
+                <div class="mt-12 text-center">
+                    <blockquote class="text-xl md:text-2xl text-gray-300 italic max-w-3xl mx-auto">
+                        "Não existe sucesso de verdade se for em apenas uma área. <span class="text-brand not-italic font-semibold">O empresário de alta performance domina todas as 6.</span>"
+                    </blockquote>
+                    <p class="mt-4 text-gray-500">— Metodologia CIS Revolution</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 4: ESPECIALISTA / AUTORIDADE -->
+    <!-- ========================================== -->
+    <section id="especialista" class="py-20 bg-dark-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                
+                <!-- Título -->
+                <div class="text-center mb-16">
+                    <p class="text-brand font-semibold mb-2">QUEM VAI TE GUIAR</p>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold">
+                        Mentores com Resultados Reais
+                    </h2>
+                </div>
+                
+                <!-- Card do Mentor Principal -->
+                <div class="bg-gray-dark rounded-2xl p-8 md:p-12 border border-gray-medium mb-8">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        
+                        <!-- Avatar / Iniciais -->
+                        <div class="flex-shrink-0">
+                            <div class="w-40 h-40 bg-gradient-to-br from-brand to-brand-dark rounded-2xl flex items-center justify-center">
+                                <span class="text-5xl font-display font-bold text-white">CIS</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Info -->
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="font-display text-2xl font-bold mb-2">Método CIS Revolution</h3>
+                            <p class="text-brand font-semibold mb-4">Transformação Integral para Empresários</p>
+                            
+                            <p class="text-gray-400 mb-6">
+                                Uma metodologia desenvolvida por especialistas em alta performance, combinando neurociência, 
+                                psicologia positiva e gestão empresarial. Testada e validada por mais de 5.000 empresários 
+                                que transformaram não só seus negócios, mas suas vidas completas.
+                            </p>
+                            
+                            <!-- Credenciais em tags -->
+                            <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                                <span class="bg-gray-medium text-gray-300 px-3 py-1 rounded-full text-sm">+10 anos de pesquisa</span>
+                                <span class="bg-gray-medium text-gray-300 px-3 py-1 rounded-full text-sm">+5.000 empresários</span>
+                                <span class="bg-gray-medium text-gray-300 px-3 py-1 rounded-full text-sm">97% recomendam</span>
+                                <span class="bg-gray-medium text-gray-300 px-3 py-1 rounded-full text-sm">6 áreas integradas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats de autoridade -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-gray-dark rounded-xl p-6 text-center border border-gray-medium">
+                        <div class="text-3xl md:text-4xl font-display font-bold text-brand mb-1">+5.000</div>
+                        <div class="text-gray-400 text-sm">Vidas Transformadas</div>
+                    </div>
+                    <div class="bg-gray-dark rounded-xl p-6 text-center border border-gray-medium">
+                        <div class="text-3xl md:text-4xl font-display font-bold text-brand mb-1">97%</div>
+                        <div class="text-gray-400 text-sm">Taxa de Satisfação</div>
+                    </div>
+                    <div class="bg-gray-dark rounded-xl p-6 text-center border border-gray-medium">
+                        <div class="text-3xl md:text-4xl font-display font-bold text-brand mb-1">10+</div>
+                        <div class="text-gray-400 text-sm">Anos de Método</div>
+                    </div>
+                    <div class="bg-gray-dark rounded-xl p-6 text-center border border-gray-medium">
+                        <div class="text-3xl md:text-4xl font-display font-bold text-brand mb-1">6</div>
+                        <div class="text-gray-400 text-sm">Áreas da Vida</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 5: PROVA SOCIAL -->
+    <!-- ========================================== -->
+    <section id="prova-social" class="py-20 bg-dark">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                
+                <!-- Título -->
+                <div class="text-center mb-16">
+                    <p class="text-brand font-semibold mb-2">RESULTADOS REAIS</p>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
+                        O Que Empresários Como Você Estão Dizendo
+                    </h2>
+                    <p class="text-gray-400">
+                        Não acredite em nós. Acredite nos resultados.
+                    </p>
+                </div>
+                
+                <!-- Depoimentos com resultado específico -->
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    
+                    <!-- Depoimento 1 -->
+                    <div class="card-hover bg-gray-dark rounded-2xl p-6 border border-gray-medium">
+                        <div class="flex items-center gap-1 text-gold mb-4">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            "Em 8 semanas, meu faturamento subiu <span class="text-brand font-bold">43%</span> e finalmente 
+                            consegui tirar 15 dias de férias com a família pela primeira vez em 7 anos."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-brand/20 rounded-full flex items-center justify-center">
+                                <span class="text-brand font-bold">RM</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Roberto M.</div>
+                                <div class="text-gray-500 text-sm">Empresário, 45 anos</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento 2 -->
+                    <div class="card-hover bg-gray-dark rounded-2xl p-6 border border-gray-medium">
+                        <div class="flex items-center gap-1 text-gold mb-4">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            "Perdi <span class="text-brand font-bold">12kg em 10 semanas</span>, voltei a dormir bem, 
+                            e meu casamento que estava por um fio nunca esteve tão forte. Transformação total."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-brand/20 rounded-full flex items-center justify-center">
+                                <span class="text-brand font-bold">CA</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Carla A.</div>
+                                <div class="text-gray-500 text-sm">Diretora Executiva, 38 anos</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento 3 -->
+                    <div class="card-hover bg-gray-dark rounded-2xl p-6 border border-gray-medium">
+                        <div class="flex items-center gap-1 text-gold mb-4">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            "Sai de <span class="text-brand font-bold">R$50k para R$180k/mês</span> em 6 meses. 
+                            Mas o melhor foi a clareza mental. Hoje sei exatamente para onde estou indo."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-brand/20 rounded-full flex items-center justify-center">
+                                <span class="text-brand font-bold">LS</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Lucas S.</div>
+                                <div class="text-gray-500 text-sm">Empreendedor, 31 anos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Badges de autoridade -->
+                <div class="bg-gray-dark rounded-2xl p-8 border border-gray-medium">
+                    <div class="text-center mb-6">
+                        <p class="text-gray-400">Reconhecido e recomendado por:</p>
+                    </div>
+                    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                        <div class="text-center">
+                            <div class="text-2xl font-display font-bold text-gray-300">Forbes</div>
+                            <div class="text-xs text-gray-500">Brasil</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-display font-bold text-gray-300">Exame</div>
+                            <div class="text-xs text-gray-500">Negócios</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-display font-bold text-gray-300">InfoMoney</div>
+                            <div class="text-xs text-gray-500">Destaque</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-display font-bold text-gray-300">Valor</div>
+                            <div class="text-xs text-gray-500">Econômico</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 6: INVESTIMENTO -->
+    <!-- ========================================== -->
+    <section id="investimento" class="py-20 bg-gradient-to-b from-dark-light to-dark">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- Título -->
+                <div class="text-center mb-12">
+                    <p class="text-brand font-semibold mb-2">INVESTIMENTO</p>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
+                        Quanto Custa Transformar Sua Vida?
+                    </h2>
+                </div>
+                
+                <!-- Ancoragem de preço -->
+                <div class="bg-gray-dark rounded-2xl p-8 mb-8 border border-gray-medium">
+                    <h3 class="font-display text-xl font-semibold mb-6 text-center">Quanto você pagaria para resolver isso tudo?</h3>
+                    <div class="space-y-3 max-w-md mx-auto">
+                        <div class="flex justify-between items-center py-2 border-b border-gray-medium">
+                            <span class="text-gray-400">Terapia por 1 ano (4x/mês)</span>
+                            <span class="text-gray-500 line-through">R$ 14.400</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-medium">
+                            <span class="text-gray-400">Coach de negócios (6 meses)</span>
+                            <span class="text-gray-500 line-through">R$ 18.000</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-medium">
+                            <span class="text-gray-400">Personal trainer + nutricionista</span>
+                            <span class="text-gray-500 line-through">R$ 9.600</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-medium">
+                            <span class="text-gray-400">Consultoria de produtividade</span>
+                            <span class="text-gray-500 line-through">R$ 6.000</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 font-bold">
+                            <span class="text-white">Total se fizesse separado:</span>
+                            <span class="text-brand text-xl">R$ 48.000+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card de preço -->
+                <div class="bg-gradient-to-br from-gray-dark to-gray-medium rounded-3xl p-2 glow-brand">
+                    <div class="bg-dark rounded-2xl p-8 md:p-12">
+                        
+                        <!-- Header do card -->
+                        <div class="text-center mb-8">
+                            <div class="inline-block bg-brand text-white text-sm font-bold px-4 py-1 rounded-full mb-4">
+                                OFERTA ESPECIAL - TURMA DE JANEIRO
+                            </div>
+                            <h3 class="font-display text-2xl font-bold">CIS Revolution - Programa Completo</h3>
+                        </div>
+                        
+                        <!-- Preço -->
+                        <div class="text-center mb-8">
+                            <div class="text-gray-500 text-lg line-through mb-1">De R$ 4.997</div>
+                            <div class="flex items-center justify-center gap-2">
+                                <span class="text-gray-400 text-2xl">Por apenas</span>
+                            </div>
+                            <div class="text-5xl md:text-6xl font-display font-bold text-brand my-2">
+                                R$ 2.497
+                            </div>
+                            <div class="text-gray-400">
+                                ou <span class="text-white font-semibold">12x de R$ 249,70</span> no cartão
+                            </div>
+                        </div>
+                        
+                        <!-- O que está incluso -->
+                        <div class="mb-8">
+                            <h4 class="font-semibold text-center mb-4">Tudo que está incluso:</h4>
+                            <div class="grid md:grid-cols-2 gap-3 max-w-2xl mx-auto">
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-300">12 semanas de programa completo</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-300">Metodologia das 6 Áreas</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-300">Acompanhamento semanal</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-300">Comunidade de empresários</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-300">Ferramentas e templates</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-brand flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gray-300">Acesso vitalício ao conteúdo</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gold font-semibold">BÔNUS: Sessão 1:1 de Diagnóstico</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-gold font-semibold">BÔNUS: E-book Alta Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA -->
+                        <div class="text-center">
+                            <a href="#" class="group inline-flex items-center justify-center gap-3 bg-brand hover:bg-brand-dark text-white font-bold text-lg px-10 py-5 rounded-xl transition-all w-full md:w-auto">
+                                GARANTIR MINHA VAGA AGORA
+                                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </a>
+                            <p class="text-sm text-gray-500 mt-4">
+                                🔒 Pagamento 100% seguro • 7 dias de garantia incondicional
+                            </p>
+                        </div>
+                        
+                        <!-- Urgência -->
+                        <div class="mt-8 bg-brand/10 rounded-xl p-4 text-center border border-brand/20">
+                            <p class="text-brand font-semibold">
+                                ⚡ Restam apenas <span class="text-white bg-brand px-2 py-1 rounded">23 vagas</span> para a turma de Janeiro
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 7: GARANTIA -->
+    <!-- ========================================== -->
+    <section id="garantia" class="py-20 bg-dark">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                
+                <!-- Selo visual -->
+                <div class="inline-flex items-center justify-center w-32 h-32 bg-gradient-to-br from-brand to-brand-dark rounded-full mb-8">
+                    <div class="text-center">
+                        <div class="text-3xl font-display font-bold">7</div>
+                        <div class="text-sm font-semibold">DIAS</div>
+                    </div>
+                </div>
+                
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">
+                    Garantia Incondicional de 7 Dias
+                </h2>
+                
+                <p class="text-xl text-gray-400 mb-8">
+                    Se em até 7 dias você sentir que o CIS Revolution não é pra você, 
+                    basta enviar um email e devolvemos <span class="text-white font-semibold">100% do seu investimento</span>.
+                </p>
+                
+                <div class="bg-gray-dark rounded-2xl p-8 border border-gray-medium">
+                    <p class="text-gray-300 mb-4">
+                        <span class="text-brand font-bold">Sem perguntas.</span> Sem burocracia. Sem letras miúdas.
+                    </p>
+                    <p class="text-gray-400">
+                        Estamos tão confiantes na transformação que você vai ter, que assumimos todo o risco. 
+                        Você não tem nada a perder e uma vida completamente nova a ganhar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 8: FAQ -->
+    <!-- ========================================== -->
+    <section id="faq" class="py-20 bg-dark-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                
+                <!-- Título -->
+                <div class="text-center mb-12">
+                    <p class="text-brand font-semibold mb-2">DÚVIDAS FREQUENTES</p>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold">
+                        Perguntas que Você Pode Ter
+                    </h2>
+                </div>
+                
+                <!-- FAQ Accordion -->
+                <div class="space-y-4">
+                    
+                    <!-- FAQ 1 -->
+                    <div class="faq-item bg-gray-dark rounded-xl border border-gray-medium overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-lg pr-4">"Não tenho tempo pra mais nada, como vou conseguir?"</span>
+                            <span class="faq-icon text-brand text-2xl flex-shrink-0">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-6 pb-6 text-gray-400">
+                                O programa foi desenhado justamente para quem não tem tempo. São <span class="text-white">apenas 3-4 horas por semana</span>, 
+                                com conteúdo direto ao ponto e exercícios práticos. Além disso, uma das primeiras coisas que você vai aprender 
+                                é a <span class="text-brand font-semibold">recuperar tempo</span> na sua rotina. Na verdade, você vai GANHAR tempo, não perder.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="faq-item bg-gray-dark rounded-xl border border-gray-medium overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-lg pr-4">"Já fiz outros cursos/mentorias e não funcionou. Por que seria diferente?"</span>
+                            <span class="faq-icon text-brand text-2xl flex-shrink-0">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-6 pb-6 text-gray-400">
+                                A maioria dos programas foca em apenas UMA área (só negócio, ou só saúde, ou só mindset). O CIS é diferente 
+                                porque trabalha as <span class="text-white">6 áreas de forma integrada</span>. Além disso, é 100% prático - 
+                                você não vai só aprender, vai <span class="text-brand font-semibold">aplicar desde a primeira semana</span>. 
+                                Por isso 97% dos participantes recomendam.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="faq-item bg-gray-dark rounded-xl border border-gray-medium overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-lg pr-4">"E se não funcionar pra mim?"</span>
+                            <span class="faq-icon text-brand text-2xl flex-shrink-0">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-6 pb-6 text-gray-400">
+                                Por isso oferecemos a <span class="text-brand font-semibold">garantia de 7 dias</span>. Se por qualquer motivo 
+                                você não gostar ou sentir que não é pra você, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. 
+                                O risco é todo nosso. Você tem tudo a ganhar e nada a perder.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="faq-item bg-gray-dark rounded-xl border border-gray-medium overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-lg pr-4">"O investimento é alto pra mim nesse momento"</span>
+                            <span class="faq-icon text-brand text-2xl flex-shrink-0">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-6 pb-6 text-gray-400">
+                                Pense assim: quanto custa ficar mais 1 ano do jeito que está? Saúde em risco, relacionamentos sofrendo, 
+                                negócio estagnado? Empresários que passaram pelo CIS aumentaram em média <span class="text-brand font-semibold">40% 
+                                seu faturamento</span> enquanto trabalhavam MENOS horas. O programa se paga no primeiro mês. 
+                                E ainda pode parcelar em até 12x.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 5 -->
+                    <div class="faq-item bg-gray-dark rounded-xl border border-gray-medium overflow-hidden">
+                        <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-lg pr-4">"Como funciona o programa? É online ou presencial?"</span>
+                            <span class="faq-icon text-brand text-2xl flex-shrink-0">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-6 pb-6 text-gray-400">
+                                O programa é <span class="text-white">100% online</span>, para você fazer no seu ritmo, de onde estiver. 
+                                São 12 semanas de conteúdo, com módulos semanais, exercícios práticos, acompanhamento e comunidade exclusiva. 
+                                Você tem acesso <span class="text-brand font-semibold">vitalício</span> a todo o material.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 9: CTA FINAL -->
+    <!-- ========================================== -->
+    <section id="cta-final" class="py-20 bg-gradient-to-b from-dark to-dark-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                
+                <!-- Headline de fechamento (FOMO) -->
+                <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                    Daqui a 12 Semanas, Você Vai Estar 
+                    <span class="gradient-text">Transformado</span> ou 
+                    <span class="text-gray-500">Igual</span>
+                </h2>
+                
+                <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                    A única diferença é a decisão que você toma agora.
+                </p>
+                
+                <!-- Recap de benefícios -->
+                <div class="flex flex-col md:flex-row justify-center gap-6 mb-10">
+                    <div class="flex items-center gap-2 text-gray-300">
+                        <svg class="w-6 h-6 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Vida equilibrada nas 6 áreas</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-300">
+                        <svg class="w-6 h-6 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Negócio crescendo sem você se matar</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-300">
+                        <svg class="w-6 h-6 text-brand" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Família e saúde em primeiro lugar</span>
+                    </div>
+                </div>
+                
+                <!-- CTA grande -->
+                <a href="#investimento" class="group inline-flex items-center justify-center gap-3 bg-brand hover:bg-brand-dark text-white font-bold text-xl px-12 py-6 rounded-xl transition-all pulse-glow">
+                    SIM, QUERO TRANSFORMAR MINHA VIDA
+                    <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+                
+                <!-- Urgência final -->
+                <p class="text-gray-500 mt-6">
+                    ⚡ Últimas <span class="text-brand font-bold">23 vagas</span> • 7 dias de garantia • Acesso imediato
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 10: FOOTER -->
+    <!-- ========================================== -->
+    <footer class="py-12 bg-dark border-t border-gray-dark">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    
+                    <!-- Logo -->
+                    <div class="font-display text-2xl font-bold">
+                        CIS <span class="text-brand">Revolution</span>
+                    </div>
+                    
+                    <!-- Links -->
+                    <div class="flex gap-6 text-sm text-gray-500">
+                        <a href="#" class="hover:text-gray-300 transition-colors">Termos de Uso</a>
+                        <a href="#" class="hover:text-gray-300 transition-colors">Política de Privacidade</a>
+                        <a href="#" class="hover:text-gray-300 transition-colors">Contato</a>
+                    </div>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="text-center text-gray-600 text-sm mt-8">
+                    © 2024 CIS Revolution. Todos os direitos reservados.
+                </div>
+                
+                <!-- Disclaimer -->
+                <div class="text-center text-gray-600 text-xs mt-4 max-w-2xl mx-auto">
+                    Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. 
+                    Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- FLOATING CTA MOBILE -->
+    <!-- ========================================== -->
+    <div id="floating-cta" class="floating-cta fixed bottom-0 left-0 right-0 bg-dark/95 backdrop-blur-sm border-t border-gray-dark p-4 z-50 md:hidden">
+        <a href="#investimento" class="flex items-center justify-center gap-2 bg-brand text-white font-bold py-4 px-6 rounded-xl w-full">
+            GARANTIR MINHA VAGA
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+        </a>
+        <p class="text-center text-xs text-gray-500 mt-2">🔒 Pagamento seguro • 7 dias de garantia</p>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS -->
+    <!-- ========================================== -->
+    <script>
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('open');
+                }
+            });
+            document.querySelectorAll('.faq-icon').forEach(item => {
+                if (item !== icon) {
+                    item.classList.remove('rotate');
+                }
+            });
+            
+            // Toggle current
+            answer.classList.toggle('open');
+            icon.classList.toggle('rotate');
+        }
+        
+        // Floating CTA Show/Hide
+        let lastScrollY = window.scrollY;
+        const floatingCta = document.getElementById('floating-cta');
+        const heroSection = document.getElementById('hero');
+        
+        function handleScroll() {
+            const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+            
+            if (window.scrollY > heroBottom - 100) {
+                floatingCta.classList.add('show');
+            } else {
+                floatingCta.classList.remove('show');
+            }
+        }
+        
+        window.addEventListener('scroll', handleScroll);
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = window.innerWidth < 768 ? 80 : 0; // Account for floating CTA on mobile
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
